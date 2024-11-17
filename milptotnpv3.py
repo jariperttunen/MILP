@@ -72,7 +72,7 @@ if __name__== "__main__":
     group = parser.add_mutually_exclusive_group(required=True)
     group.add_argument("-c","--constraint",dest="c",type=float,help="TOTbmass20 constraint (see the input csv file)")
     group.add_argument("--clower",dest="clower",type=float,help="TOTbmass20 lower bound constraint  (see the input csv file)")
-    parser.add_argument("--cupper",dest="cupper",type=float,help="TOTbmass20 lower bound constraint  (see the input csv file)")
+    parser.add_argument("--cupper",dest="cupper",type=float,help="TOTbmass20 upper bound constraint  (see the input csv file)")
     parser.add_argument("-m","--lpm",dest="m",help="Write LP model to file")
     parser.add_argument("-l","--log",dest="l",help="Write Log file")
     args = parser.parse_args()
